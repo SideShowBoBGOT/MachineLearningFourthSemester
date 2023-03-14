@@ -165,16 +165,16 @@ os.system('rm *.png')
 from docxcompose.composer import Composer
 
 
-def combine_all_docx(filename_master, files_list):
+def combine_all_docx(combined_name, filename_master, files_list):
     number_of_sections=len(files_list)
     master = Document(filename_master)
     composer = Composer(master)
     for i in range(0, number_of_sections):
         doc_temp = Document(files_list[i])
         composer.append(doc_temp)
-    composer.save("Звіт_Панченко.docx")
+    composer.save(combined_name)
 
-combine_all_docx('template.docx', ['test.docx', 'results.docx'])
+combine_all_docx('Звіт_Панченко.docx', 'template.docx', ['test.docx', 'results.docx'])
 
 
     
