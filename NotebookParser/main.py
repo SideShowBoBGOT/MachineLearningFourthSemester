@@ -126,10 +126,18 @@ def update_picture_para_style(picture_para, name):
     picture = picture_run.add_picture(name, width=Inches(w), height=Inches(h))
 
 
+def update_picture_name_style(run):
+    font = run.font
+    font.size = Pt(14)
+    font.name = 'Times New Roman'
+    font.color.rgb = RGBColor(0, 0, 0)
+
 
 def update_document(document):
     for head_one in tree:
-        heading_one = document.add_paragraph(' '.join(head_one['text'].split(' ')[1:]), style=new_heading_one_style_name)
+        head_one_parts = head_one['text'].split(' ')
+        head_one_number = head_one_parts[0]
+        heading_one = document.add_paragraph(' '.join(head_one_parts[1:]), style=new_heading_one_style_name)
         heading_one.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
         for head_two in head_one['children']:
             heading_two = document.add_paragraph(' '.join(head_two['text'].split(' ')[1:]), style=new_heading_two_style_name)
@@ -139,20 +147,36 @@ def update_document(document):
                 ex_run = para_text.add_run(element['text'])
                 update_paragraph_text_style(ex_run)
                 if element['picture']:
+                    picture_number = element['picture'].split('.')[0]
+                    picture_text = element['text']
                     picture_para = document.add_paragraph()
                     update_picture_para_style(picture_para, element['picture'])
-                    run = picture_para.add_run('\n' + element['name'])
-                    font = run.font
-                    font.size = Pt(14)
-                    font.name = 'Times New Roman'
-                    font.color.rgb = RGBColor(0, 0, 0)
+                    run_text = f'\nРисунок {head_one_number}.{picture_number} - {picture_text}'
+                    run = picture_para.add_run(run_text)
+                    update_picture_name_style(run)
 
 update_section_styles(document)
 update_paragraph_format_styles(document)
 update_document(document)
 
 document.save('test.docx')
-os.system('mv test.docx NotebookParser/test.docx')
+os.system('rm *.png')
+
+from docxcompose.composer import Composer
+
+
+def combine_all_docx(filename_master, files_list):
+    number_of_sections=len(files_list)
+    master = Document(filename_master)
+    composer = Composer(master)
+    for i in range(0, number_of_sections):
+        doc_temp = Document(files_list[i])
+        composer.append(doc_temp)
+    composer.save("Звіт_Панченко.docx")
+
+combine_all_docx('template.docx', ['test.docx', 'results.docx'])
+
+
     
     
 
