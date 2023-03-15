@@ -151,7 +151,7 @@ def update_document(document):
                     picture_text = element['text']
                     picture_para = document.add_paragraph()
                     update_picture_para_style(picture_para, element['picture'])
-                    run_text = f'\nРисунок {head_one_number}.{picture_number} - {picture_text}'
+                    run_text = f'\nРисунок {head_one_number}.{picture_number} - {picture_text}\n'
                     run = picture_para.add_run(run_text)
                     update_picture_name_style(run)
 
