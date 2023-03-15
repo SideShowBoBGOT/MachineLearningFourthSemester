@@ -12,7 +12,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 # constants
 notebook_path = 'main.ipynb'
-notebook_path = 'file:///home/choleraplague/university/MachineLearning/Lab1/main.html'
+notebook_path = 'file:///home/choleraplague/university/MachineLearning/Lab2/lab2.html'
 
 # init driver
 options = Options()
