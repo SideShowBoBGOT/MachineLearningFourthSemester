@@ -11,8 +11,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 # constants
-notebook_path = 'main.ipynb'
-notebook_path = 'file:///home/choleraplague/university/MachineLearning/Lab2/lab2.html'
+notebook_path = '/home/choleraplague/university/MachineLearning/Lab2/'
+notebook_name = 'lab2'
+out_name = 'ПЗМН_Лаб3_ІП11_Панченко.docx'
+front_path = 'front.docx'
+back_path = 'back.docx'
+
+os.system(f'jupyter nbconvert --to html {notebook_name}.ipynb')
 
 # init driver
 options = Options()
@@ -54,7 +59,7 @@ def parse_notebook(driver, path) -> list:
             tree[-1]['children'][-1]['children'][-1]['picture'] = name
     return tree
 
-tree = parse_notebook(driver, notebook_path)
+tree = parse_notebook(driver, 'file://' + notebook_path + notebook_name + '.html')
 
 from docx import Document
 from docx.shared import Inches, Pt
@@ -64,35 +69,35 @@ from docx.shared import RGBColor
 from PIL import Image
 document = Document()
 
-def add_heading_one_style(document) -> str:
-    styles = document.styles
-    name = 'New Heading 1'
-    new_heading_style = styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
-    new_heading_style.base_style = styles['Heading 1']
-    font = new_heading_style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(14)
-    new_heading_style.paragraph_format.first_line_indent = Inches(0)
-    new_heading_style.font.color.rgb = RGBColor(0, 0, 0)
-    new_heading_style.font.all_caps = True
-    new_heading_style.font.bold = False
-    return name
+# def add_heading_one_style(document) -> str:
+#     styles = document.styles
+#     name = 'New Heading 1'
+#     new_heading_style = styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+#     new_heading_style.base_style = styles['Heading 1']
+#     font = new_heading_style.font
+#     font.name = 'Times New Roman'
+#     font.size = Pt(14)
+#     new_heading_style.paragraph_format.first_line_indent = Inches(0)
+#     new_heading_style.font.color.rgb = RGBColor(0, 0, 0)
+#     new_heading_style.font.all_caps = True
+#     new_heading_style.font.bold = False
+#     return name
 
-def add_heading_two_style(document) -> str:
-    styles = document.styles
-    name = 'New Heading 2'
-    new_heading_style = styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
-    new_heading_style.base_style = styles['Heading 2']
-    font = new_heading_style.font
-    font.name = 'Times New Roman'
-    font.size = Pt(14)
-    new_heading_style.paragraph_format.first_line_indent = Inches(0)
-    new_heading_style.font.color.rgb = RGBColor(0, 0, 0)
-    new_heading_style.font.bold = False
-    return name
+# def add_heading_two_style(document) -> str:
+#     styles = document.styles
+#     name = 'New Heading 2'
+#     new_heading_style = styles.add_style(name, WD_STYLE_TYPE.PARAGRAPH)
+#     new_heading_style.base_style = styles['Heading 2']
+#     font = new_heading_style.font
+#     font.name = 'Times New Roman'
+#     font.size = Pt(14)
+#     new_heading_style.paragraph_format.first_line_indent = Inches(0)
+#     new_heading_style.font.color.rgb = RGBColor(0, 0, 0)
+#     new_heading_style.font.bold = False
+#     return name
 
-new_heading_one_style_name = add_heading_one_style(document)
-new_heading_two_style_name = add_heading_two_style(document)
+new_heading_one_style_name = 'Heading 1'# add_heading_one_style(document)
+new_heading_two_style_name = 'Heading 2' #add_heading_two_style(document)
 
 def update_section_styles(document):
     for section in document.sections:
@@ -101,18 +106,10 @@ def update_section_styles(document):
         section.top_margin = Inches(0.49)
         section.bottom_margin = Inches(0.59)
 
-def update_paragraph_format_styles(document):
-    paragraph_format = document.styles['Normal'].paragraph_format
-    paragraph_format.line_spacing = 1.5
-    paragraph_format.first_line_indent = Inches(0.492)
-    
-
-def update_paragraph_text_style(para_text_run):
-    font = para_text_run.font
-    font.size = Pt(14)
-    font.name = 'Times New Roman'
-    font.color.rgb = RGBColor(0, 0, 0)
-
+# def update_paragraph_format_styles(document):
+#     paragraph_format = document.styles['Default Paragraph Style'].paragraph_format
+#     paragraph_format.line_spacing = 1.5
+#     paragraph_format.first_line_indent = Inches(0.492)
 
 def update_picture_para_style(picture_para, name):
     picture_para.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
@@ -125,13 +122,16 @@ def update_picture_para_style(picture_para, name):
     h /= 136
     picture = picture_run.add_picture(name, width=Inches(w), height=Inches(h))
 
-
-def update_picture_name_style(run):
+def update_run_font(run):
     font = run.font
     font.size = Pt(14)
     font.name = 'Times New Roman'
     font.color.rgb = RGBColor(0, 0, 0)
 
+def update_para_ident(para):
+    para.paragraph_format.line_spacing = 1.5
+    para.paragraph_format.first_line_indent = Inches(0.492)
+    para.paragraph_format.right_indent = Inches(0.309)
 
 def update_document(document):
     for head_one in tree:
@@ -140,23 +140,28 @@ def update_document(document):
         heading_one = document.add_paragraph(' '.join(head_one_parts[1:]), style=new_heading_one_style_name)
         heading_one.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
         for head_two in head_one['children']:
-            heading_two = document.add_paragraph(' '.join(head_two['text'].split(' ')[1:]), style=new_heading_two_style_name)
+            heading_two = document.add_paragraph(style=new_heading_two_style_name)
+            run = heading_two.add_run(' '.join(head_two['text'].split(' ')[1:]) + '\n')
             heading_two.is_linked_to_previous = True
+            update_run_font(run)
             for element in head_two['children']:
                 para_text = document.add_paragraph()
+                update_para_ident(para_text)
                 ex_run = para_text.add_run(element['text'])
-                update_paragraph_text_style(ex_run)
+                update_run_font(ex_run)
                 if element['picture']:
+                    document.add_paragraph(' ')
                     picture_number = element['picture'].split('.')[0]
-                    picture_text = element['text']
+                    picture_text = element['name']
                     picture_para = document.add_paragraph()
+                    update_para_ident(picture_para)
                     update_picture_para_style(picture_para, element['picture'])
-                    run_text = f'\nРисунок {head_one_number}.{picture_number} - {picture_text}\n'
+                    run_text = f'\n\nРисунок {head_one_number}.{picture_number} - {picture_text}\n'
                     run = picture_para.add_run(run_text)
-                    update_picture_name_style(run)
+                    update_run_font(run)
 
 update_section_styles(document)
-update_paragraph_format_styles(document)
+#update_paragraph_format_styles(document)
 update_document(document)
 
 document.save('test.docx')
@@ -174,7 +179,7 @@ def combine_all_docx(combined_name, filename_master, files_list):
         composer.append(doc_temp)
     composer.save(combined_name)
 
-combine_all_docx('Звіт_Панченко.docx', 'template.docx', ['test.docx', 'results.docx'])
+combine_all_docx(out_name, front_path, ['test.docx', back_path])
 
 
     
