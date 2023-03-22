@@ -11,9 +11,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 
 # constants
-notebook_path = '/home/choleraplague/university/MachineLearning/Lab3/'
-notebook_name = 'lab3'
-out_name = 'ПЗМН_Лаб3_ІП11_Панченко.docx'
+notebook_path = '/home/choleraplague/university/MachineLearning/Lab4/'
+notebook_name = 'lab4'
+out_name = 'ПЗМН_Лаб4_ІП11_Панченко.docx'
 front_path = 'front.docx'
 back_path = 'back.docx'
 
