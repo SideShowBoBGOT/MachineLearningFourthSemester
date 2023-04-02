@@ -1,0 +1,1 @@
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}

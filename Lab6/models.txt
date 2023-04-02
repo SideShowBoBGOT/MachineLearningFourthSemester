@@ -1,0 +1,108 @@
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 20, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 30, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 50, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 50, 'activation': 'relu', 'input_shape': (4,)}, {'units': 50, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 100, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 100, 'activation': 'relu', 'input_shape': (4,)}, {'units': 100, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'sigmoid', 'input_shape': (4,)}, {'units': 200, 'activation': 'sigmoid'}, {'units': 2, 'activation': 'sigmoid'}]}
+{'epochs': 40, 'layers': [{'units': 200, 'activation': 'relu', 'input_shape': (4,)}, {'units': 200, 'activation': 'relu'}, {'units': 2, 'activation': 'relu'}]}
