@@ -13,7 +13,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 # os.system('nbmerge lab5.ipynb lab5_cifar10.ipynb lab5_fmnist.ipynb > lab5_main.ipynb')
 
 # constants
-notebook_path = '/home/choleraplague/university/MachineLearning/Lab5/'
+notebook_path = '/home/choleraplague/university/DataScience/MachineLearning/Lab6/'
 notebook_name = 'lab6'
 out_name = 'ПЗМН_Лаб6_ІП11_Панченко.docx'
 front_path = 'front.docx'
